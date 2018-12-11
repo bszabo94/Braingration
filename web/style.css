@@ -1,0 +1,153 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: white;
+    overflow: hidden;
+}
+
+#holder {
+    height: 100%;
+    display: flex;
+}
+
+#left-panel {
+    display: flex;
+    flex: 5;
+    margin: black;
+}
+
+#overlay {
+    background-image: url("ripple.gif");
+    height: 100%;
+    width: 100%;
+}
+
+#right-panel {
+    display: flex;
+    flex: 2;
+    flex-flow: column;
+    background-image: url("harold.jpg");
+    background-size: cover;
+    background-position-x: -70px;
+    overflow-y:scroll;
+    overflow:hidden;
+}
+
+#menu-holder {
+    width: 80%;
+    height: 150px;
+    align-self: center;
+    align-content: center;
+}
+
+.menu-title {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-size: 4vw;
+}
+
+#menu-text-holder {
+    margin-top: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#menu-text-holder > * {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.25px;
+    text-shadow: 2px 2px black;
+    font-size: 16px;
+    font-size: 1vw;
+}
+
+#button-holder {
+    display:flex;
+    flex-flow: column;
+}
+
+.button {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 40%;
+    cursor:pointer;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.2px;
+    border: none;
+    text-align: center;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+#button-birth{
+    background-color: green
+}
+
+#button-loc{
+    background-color: red;
+}
+
+#button-emigration{
+    background-image: linear-gradient(to right, red, green);
+}
+
+#button-immigration{
+    background-image: linear-gradient(to right, green, red);
+}
+
+#button-inner{
+    background-image: linear-gradient(to right, green, red);
+}
+
+#map-holder {
+    width: 100%;
+    height: 100%;
+    background-color: #00a2be;
+    }
+
+.country{
+    fill: #e9e9e9;   /* country colour */
+    stroke: black;
+    stroke-width: 0.05;
+    
+    }
+
+.country:hover{
+    fill: #ffffff;   /* country colour */
+    /* stroke: black; */
+    /* stroke-width: 0.05; */
+}
+.country-on{
+    fill: #ffffff;
+    stroke: blue;
+    stroke-width: 0.5px;
+}
+
+#edges > *{
+        fill:none;
+        /* stroke: linear-gradient(green, red);  */
+        /* background: linear-gradient(green, red);  */
+        stroke-width: .5px;
+        /* opacity: 0.5; */
+    }
+
+.birthloc{
+    fill: green;
+    opacity: 0.2;
+}
+
+.loc{
+    fill: red;
+    opacity: 0.2;
+}

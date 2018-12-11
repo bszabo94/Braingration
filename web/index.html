@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Braingration</title>
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>-->
+    <!--<script src="https://d3js.org/d3-geo.v1.min.js"></script>-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="holder">
+        <div id="left-panel">
+            <div id="map-holder"></div>
+            <!-- <div id="overlay">
+                
+            </div> -->
+        </div>
+        <div id="right-panel">
+            <div id="menu-holder">
+                <div class="menu-title">
+                    Braingration
+                </div>
+            </div>
+
+            <div id="menu-text-holder">
+                <div id="menu-text">
+                    <p>This interactive map is based upon the data of Wikipedia. The dataset had been fetched using
+                        SPARQL queries againts
+                        the endpoint of DBPedia, which is a structured form of data represented in Wikipedia.
+                    </p>
+                    <p>The map aims to provide an insight of the migration of intellectuals over human history.</p>
+                    <p>Countries can be selected to reveal both immigration and emigration of sceintists of the
+                        particular country, as well as
+                        focal points of both birthplaces and travel destinations.
+                    </p>
+                </div>
+            </div>
+            <div id="button-holder">
+                <input type="button" class="button" id="button-birth" value="Toggle Birth Locations">
+                <input type="button" class="button" id="button-loc" value="Toggle Locations">
+                <input type="button" class="button" id="button-emigration" value="Toggle Emigration Edges">
+                <input type="button" class="button" id="button-immigration" value="Toggle Immigration Edges">
+                <input type="button" class="button" id="button-inner" value="Toggle Inner Edges">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
