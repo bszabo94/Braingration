@@ -115,6 +115,10 @@ body {
     background-image: linear-gradient(to right, green, red);
 }
 
+#button-coloring{
+    background-image: linear-gradient(to left, green, red);
+}
+
 #map-holder {
     width: 100%;
     height: 100%;

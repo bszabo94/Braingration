@@ -22,7 +22,8 @@ var showBirths = false,
     showLocs = false,
     showImmigration = false,
     showEmigration = false,
-    showInner = false;
+    showInner = false,
+    showColoring = true;
 
 var countries = {};
 var birthLocs = {};
@@ -106,6 +107,19 @@ toggleInnerEdges = function () {
     }
 }
 
+toggleColoring = function () {
+    let country = selectedCountry.getAttribute("id");
+    if (showColoring) {
+        for (othercountry of Object.keys(tones[country])) {
+            let color = d3.rgb(...tones[country][othercountry]);
+            countries[othercountry].node().style.fill = color;
+        }
+    } else {
+        for (othercountry of Object.keys(tones[country]))
+            countries[othercountry].node().style.fill = "";
+    }
+}
+
 selectCountry = function (node) {
     if (selectedCountry != undefined) {
         let country = selectedCountry.getAttribute("id");
@@ -135,13 +149,8 @@ selectCountry = function (node) {
     toggleInnerEdges();
     toggleEmigrationEdges();
     toggleImmigrationEdges();
+    toggleColoring();
 
-    let country = selectedCountry.getAttribute("id");
-
-    for (othercountry of Object.keys(tones[country])) {
-        let color = d3.rgb(...tones[country][othercountry]);
-        countries[othercountry].node().style.fill = color;
-    }
 
 }
 
@@ -317,4 +326,9 @@ $("#button-inner").on("click", function () {
 $("#button-loc").on("click", function () {
     showLocs = !showLocs;
     toggleLocs();
+})
+
+$("#button-coloring").on("click", function () {
+    showColoring = !showColoring;
+    toggleColoring();
 })
