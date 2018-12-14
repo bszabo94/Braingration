@@ -122,30 +122,27 @@ body {
     }
 
 .country{
-    fill: #e9e9e9;   /* country colour */
+    fill: #e9e9e9;
     stroke: black;
     stroke-width: 0.05;
     
     }
 
 .country:hover{
-    fill: #ffffff;   /* country colour */
-    /* stroke: black; */
-    /* stroke-width: 0.05; */
+    size: 120%;
+    /* stroke: black;
+    stroke-width: 0.5; */
 }
 .country-on{
     fill: #ffffff;
     stroke: blue;
-    stroke-width: 0.5px;
+    stroke-width: 0.75px;
 }
 
 .edge{
         fill:none;
         stroke: black;
-        /* stroke: linear-gradient(green, red);  */
-        /* background: linear-gradient(green, red);  */
         stroke-width: .25px;
-        /* opacity: 0.5; */
     }
 
 .birthloc{
