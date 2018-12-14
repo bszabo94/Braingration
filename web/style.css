@@ -130,8 +130,8 @@ body {
 
 .country:hover{
     size: 120%;
-    /* stroke: black;
-    stroke-width: 0.5; */
+    stroke: black;
+    stroke-width: 0.5;
 }
 .country-on{
     fill: #ffffff;
