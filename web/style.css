@@ -48,7 +48,7 @@ body {
 
 .menu-title {
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact;
     color: white;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
@@ -65,59 +65,69 @@ body {
 }
 
 #menu-text-holder > * {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact;
     color: white;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 0.25px;
     text-shadow: 2px 2px black;
     font-size: 16px;
     font-size: 1vw;
+    text-align: justify;
 }
 
-#button-holder {
-    display:flex;
-    flex-flow: column;
+.table {
+    width: 100%;
 }
 
 .button {
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    height: 40%;
-    cursor:pointer;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 0.2px;
-    border: none;
-    text-align: center;
-    margin-bottom: 5px;
-    text-decoration: none;
+    width:85%;
+    height: 85%;
+    align-self: center;
+	box-shadow: 3px 4px 0px 0px #666666;
+	background:linear-gradient(to bottom, #c4c4c4 5%, #666666 100%);
+	background-color:#c4c4c4;
+	border-radius:5px;
+	border:1px solid #666666;
+	display:inline-block;
+	cursor:pointer;
+    color:#ffffff;
+    font-family:Impact;
+	font-size:17px;
+	padding:12px 44px;
+    text-shadow:0px 1px 0px #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
 
-#button-birth{
-    background-color: green
+#button-birth:hover {
+    background:linear-gradient(to bottom, #00b900 5%, #006900 100%);
 }
 
-#button-loc{
-    background-color: red;
+#button-loc:hover{
+    background:linear-gradient(to bottom, #e00000 5%, #910000 100%);
 }
 
-#button-emigration{
-    background-image: linear-gradient(to right, red, green);
+#button-emigration:hover{
+    background:linear-gradient(to bottom, #3f3f3f 5%, #1b1b1b 100%);
 }
 
-#button-immigration{
-    background-image: linear-gradient(to right, green, red);
+#button-immigration:hover{
+    background:linear-gradient(to bottom, #3f3f3f 5%, #1b1b1b 100%);
 }
 
-#button-inner{
-    background-image: linear-gradient(to right, green, red);
+#button-inner:hover{
+    background:linear-gradient(to bottom, #3f3f3f 5%, #1b1b1b 100%);
 }
 
-#button-coloring{
-    background-image: linear-gradient(to left, green, red);
+#button-coloring:hover{
+    background: linear-gradient(to left, #00ff00, #ff0000);
 }
+
 
 #map-holder {
     width: 100%;

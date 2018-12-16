@@ -23,7 +23,7 @@ var showBirths = false,
     showImmigration = false,
     showEmigration = false,
     showInner = false,
-    showColoring = true;
+    showColoring = false;
 
 var countries = {};
 var birthLocs = {};
@@ -305,30 +305,66 @@ drawDataJS();
 
 $("#button-birth").on("click", function () {
     showBirths = !showBirths;
+
+    if (showBirths)
+        $(this).css("background", "linear-gradient(to bottom, #00b900 5%, #006900 100%)");
+    else
+        $(this).css("background", "");
+
     toggleBirthLocs();
 });
 
 $("#button-emigration").on("click", function () {
     showEmigration = !showEmigration;
+
+    if (showEmigration)
+        $(this).css("background", "linear-gradient(to bottom, #3f3f3f 5%, #1b1b1b 100%)");
+    else
+        $(this).css("background", "");
+
     toggleEmigrationEdges();
 })
 
 $("#button-immigration").on("click", function () {
     showImmigration = !showImmigration;
+
+    if (showImmigration)
+        $(this).css("background", "linear-gradient(to bottom, #3f3f3f 5%, #1b1b1b 100%)");
+    else
+        $(this).css("background", "");
+
     toggleImmigrationEdges();
 })
 
 $("#button-inner").on("click", function () {
     showInner = !showInner;
+
+    if (showInner)
+        $(this).css("background", "linear-gradient(to bottom, #3f3f3f 5%, #1b1b1b 100%)");
+    else
+        $(this).css("background", "");
+
     toggleInnerEdges();
 })
 
 $("#button-loc").on("click", function () {
     showLocs = !showLocs;
+
+    if (showLocs)
+        $(this).css("background", "linear-gradient(to bottom, #e00000 5%, #910000 100%)");
+    else
+        $(this).css("background", "");
+
     toggleLocs();
 })
 
 $("#button-coloring").on("click", function () {
     showColoring = !showColoring;
+
+    if (showColoring)
+        $(this).css("background", "linear-gradient(to left, #00ff00, #ff0000)");
+    else
+        $(this).css("background", "");
+
     toggleColoring();
 })
