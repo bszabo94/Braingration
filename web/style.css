@@ -36,7 +36,7 @@ body {
     background-size: cover;
     background-position-x: -70px;
     overflow-y:scroll;
-    overflow:hidden;
+    overflow-x: hidden;
 }
 
 #menu-holder {
@@ -78,6 +78,9 @@ body {
 .table {
     width: 100%;
 }
+td {
+    width: 50%;
+}
 
 .button {
     width:85%;
@@ -92,8 +95,9 @@ body {
 	cursor:pointer;
     color:#ffffff;
     font-family:Impact;
+    text-align: center;
 	font-size:17px;
-	padding:12px 44px;
+	padding:12px;
     text-shadow:0px 1px 0px #000000;
     margin-left: 10%;
     margin-right: 10%;
@@ -128,6 +132,76 @@ body {
     background: linear-gradient(to left, #00ff00, #ff0000);
 }
 
+#legend-title {
+    font-family: Impact;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.25px;
+    text-shadow: 2px 2px black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#emigration-scale {
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(to right, #320000, #ff0000)
+}
+
+#immigration-scale {
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(to right, #003200, #00ff00)
+}
+
+#eq-migration-scale {
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #c8c800;
+}
+
+.migration-left-label {
+    float: left;
+    margin-left: 5%;
+    font-family: Impact;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.25px;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+}
+.migration-right-label {
+    float: right;
+    margin-right: 5%;
+    font-family: Impact;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.25px;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+}
+
+.migration-center-label {
+    text-align: center;
+    font-family: Impact;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.25px;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+}
+
+.migration-legend {
+    margin-bottom: 8%;
+}
 
 #map-holder {
     width: 100%;

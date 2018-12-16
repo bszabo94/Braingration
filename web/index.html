@@ -41,7 +41,7 @@
                 <table class="table">
                     <tr>
                         <td>
-                            <input type="button" class="button" id="button-birth" value="Birth Locations">
+                            <input type="button" class="button" id="button-birth" value="Birthplaces">
                         </td>
                         <td>
                             <input type="button" class="button" id="button-loc" value="Locations">
@@ -49,21 +49,44 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="button" class="button" id="button-emigration" value="Emigration Edges">
+                            <input type="button" class="button" id="button-emigration" value="Emigration">
                         </td>
                         <td>
-                            <input type="button" class="button" id="button-immigration" value="Immigration Edges">
+                            <input type="button" class="button" id="button-immigration" value="Immigration">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="button" class="button" id="button-inner" value="Inner Edges">
+                            <input type="button" class="button" id="button-inner" value="Internal migration">
                         </td>
                         <td>
                             <input type="button" class="button" id="button-coloring" value="Coloring">
                         </td>
                     </tr>
                 </table>
+            </div>
+            <div id="legend-holder">
+                <div id="legend-title">Legend</div>
+                <div class="migration-legend">
+                    <div id="immigration-scale"></div>
+                    <div class="migration-labels">
+                        <div class="migration-left-label">Less Immigration</div>
+                        <div class="migration-right-label">More Immigration</div>
+                    </div>
+                </div>
+                <div class="migration-legend">
+                    <div id="emigration-scale"></div>
+                    <div class="migration-labels">
+                        <div class="migration-left-label">Less Emigration</div>
+                        <div class="migration-right-label">More Emigration</div>
+                    </div>
+                </div>
+                <div class="migration-legend">
+                    <div id="eq-migration-scale"></div>
+                    <div class="migration-labels">
+                        <div class="migration-center-label">Immigration/Emmigration ratio equal</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
